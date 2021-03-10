@@ -8,13 +8,10 @@ require_once('template_header.php');
 <p3>WeChat: PAGE-WILL</p3>
 <h1 align="center">My Hobbies</h1>
 <hr>
-<nav class="menu">
-    <ul>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="cv.php">CV</a></li>
-        <li><a href="hobbies.php">Hobbies</a></li>
-    </ul>
-</nav>
+<?php
+require_once('template_menu.php');
+renderMenuToHTML('hobbies');
+?>
 <h3>Football</h3><hr/>
 <p>One of my favorite activities is football. Since 2006, I've been a football fan because of the World Cup, and very quickly I fell in love with one of the greatest football clubs -- Real Madrid because of Zidane and Beckham.
 When I was a little boy, I was dreaming about becoming a football star but somehow I now become a future engineer... Anyway, I started playing football when I was at junior high school and during the past decade, I've taken part in many matches and scored a plenty of points and of course won a lot of titles.
@@ -33,5 +30,6 @@ Let me show you some of my beautiful work</p>
 <p>Hahaha, fooled you!!! It's just me, I won't show the real ones because you might steal it!!! However, I am certainly the masterpiece of my own!!! So is everyone!!!</p>
 <hr/>
 <p align="center">page hobbies</p>
-</body>
-</html>
+<?php
+require_once('template_footer.php');
+?>

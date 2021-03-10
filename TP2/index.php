@@ -8,13 +8,10 @@ require_once('template_header.php');
 <p3>WeChat: PAGE-WILL</p3><br/>
 <h1 align="center">Acceuil</h1>
 <hr>
-<nav class="menu">
-    <ul>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="cv.php">CV</a></li>
-        <li><a href="hobbies.php">Hobbies</a></li>
-    </ul>
-</nav>
+<?php
+require_once('template_menu.php');
+renderMenuToHTML('index');
+?>
 <p>Hi, there. My name is Zhiwei Pei and i'm from China. I've graduated from North China Electric Power University majoring in Communication Engineering and now I'm at IMT-Lille-Douai for my further study in Information Technology.</p>
 <p>To know my experiences in CV, please click CV in the menu. There you will find everything you want from my professional career;</p>
 <p>To get more information of my personality, please go for Hobbies in the menu. There I will show you more details from every aspect of my daily life.</p>
@@ -39,5 +36,6 @@ require_once('template_header.php');
 </ul>
 <hr/>
 <p align="center">page main</p>
-</body>
-</html>
+<?php
+require_once('template_footer.php');
+?>

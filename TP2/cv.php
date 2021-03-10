@@ -8,13 +8,10 @@ require_once('template_header.php');
 <p3>WeChat: PAGE-WILL</p3>
 <h1 align="center">C.V.</h1>
 <hr>
-<nav class="menu">
-    <ul>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="cv.php">CV</a></li>
-        <li><a href="hobbies.php">Hobbies</a></li>
-    </ul>
-</nav>
+<?php
+require_once('template_menu.php');
+renderMenuToHTML('cv');
+?>
 <h3>Education Background</h3><hr/>
 <p><strong>IMT-Lille-Douai</strong>, Information Technology, Engineer | Lille, France | 2020.09-2022.09</p>
 <p>Main Courses: Operation System, JavaSE, Web and JavaScript, JavaEE, Spring and SpringBoot, Development of Android and iOS;</p>
@@ -57,5 +54,6 @@ require_once('template_header.php');
 </ul>
 <hr/>
 <p align="center">page cv</p>
-</body>
-</html>
+<?php
+require_once('template_footer.php');
+?>
