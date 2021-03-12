@@ -1,17 +1,6 @@
 <?php
 require_once('template_header.php');
 ?>
-<img src="01.JPG" width="150" height="210" align="right">
-<p0><strong>Zhiwei PEI</strong></p0><br/><br/>
-<p1>email: zhiwei.pei@outlook.com</p1><br/>
-<p2>tele: +33 0650627446/+86 18810802793</p2><br/>
-<p3>WeChat: PAGE-WILL</p3>
-<h1 align="center">My Hobbies</h1>
-<hr>
-<?php
-require_once('template_menu.php');
-renderMenuToHTML('hobbies');
-?>
 <h3>Football</h3><hr/>
 <p>One of my favorite activities is football. Since 2006, I've been a football fan because of the World Cup, and very quickly I fell in love with one of the greatest football clubs -- Real Madrid because of Zidane and Beckham.
 When I was a little boy, I was dreaming about becoming a football star but somehow I now become a future engineer... Anyway, I started playing football when I was at junior high school and during the past decade, I've taken part in many matches and scored a plenty of points and of course won a lot of titles.

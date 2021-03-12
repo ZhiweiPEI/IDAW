@@ -1,17 +1,6 @@
 <?php
 require_once('template_header.php');
 ?>
-<img src="01.JPG" width="150" height="210" align="right">
-<p0><strong>Zhiwei PEI</strong></p0><br/><br/>
-<p1>email: zhiwei.pei@outlook.com</p1><br/>
-<p2>tele: +33 0650627446/+86 18810802793</p2><br/>
-<p3>WeChat: PAGE-WILL</p3>
-<h1 align="center">C.V.</h1>
-<hr>
-<?php
-require_once('template_menu.php');
-renderMenuToHTML('cv');
-?>
 <h3>Education Background</h3><hr/>
 <p><strong>IMT-Lille-Douai</strong>, Information Technology, Engineer | Lille, France | 2020.09-2022.09</p>
 <p>Main Courses: Operation System, JavaSE, Web and JavaScript, JavaEE, Spring and SpringBoot, Development of Android and iOS;</p>

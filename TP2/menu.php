@@ -9,9 +9,9 @@ $mymenu = array(
 echo "<ul>";
     foreach($mymenu as $pageId => $pageParameters) {
         if ($pageId === $currentPageId) {
-            echo "<li><a id=\"currentpage\" href=\"" . $pageId . ".php\">" . $pageParameters[0] . "</a></li>";
+            echo "<li><a id=\"currentpage\" href=\"http://localhost:8888/tp2/index.php?page=" . $pageId . "\">" . $pageParameters[0] . "</a></li>";
         } else {
-            echo "<li><a href=\"" . $pageId . ".php\">" . $pageParameters[0] . "</a></li>";
+            echo "<li><a href='http://localhost:8888/tp2/index.php?page=" . $pageId .  "'>" . $pageParameters[0] . "</a></li>";
         }
     }
 echo "</ul>";
