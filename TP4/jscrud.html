@@ -1,70 +1,123 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="jscrud.html" crossorigin="anonymous"></script>
-    <title>tabletest</title>
-    <style>
-        body{ margin-top: 5em; }
-        .table {
-            margin-top: 100px;
-            margin-bottom: 100px; }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">Nom</th>
-        <th scope="col">Prenom</th>
-        <th scope="col">Date de naissance</th>
-        <th scope="col">Aime le cours Web</th>
-        <th scope="col">Remarques</th>
-        <th scope="col">CRUD</th>
-    </tr>
-    </thead>
-    <tbody id="studentsTableBody"></tbody>
-</table>
-<form id="addStudentForm" action="jscrud.html" onsubmit="onFormSubmit();" method="post">
-    <div class="form-group row">
-        <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
-        <div class="col-sm-3"> <input type="text" class="form-control" id="inputNom" > </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="inputPrenom" class="col-sm-2 col-form-label">Prenom</label>
-        <div class="col-sm-3"> <input type="text" class="form-control" id="inputPrenom" > </div>
-    </div>
-
-    <div class="form-group row">
-        <label for="inputBirthday" class="col-sm-2 col-form-label">Date de naissance</label>
-        <div class="col-sm-3"> <input type="text" class="form-control" id="inputBirthday" > </div>
-    </div>
-
-    <div class="form-group row">
-        <label for="inputSelect" class="col-sm-2 col-form-label">Adore le cours</label>
-        <div class="col-sm-3"> <input type="checkbox" class="form-control" id="inputSelect" > </div>
-    </div>
-
-    <div class="form-group row">
-        <label for="inputRemarques" class="col-sm-2 col-form-label">Remarques</label>
-        <div class="col-sm-3"> <input type="text" class="form-control" id="inputRemarques" > </div>
-    </div>
-
-    <div class="form-group row"> <span class="col-sm-2"></span>
-        <div class="col-sm-2">
-            <button type="submit" class="btn btn-primary form-control" value="Submit">Submit</button>
-        </div>
-    </div>
-</form>
-<script>
-    function onFormSubmit() {
-// prevent the form to be sent to the server
-        event.preventDefault();
-        let nom = $("#inputNom").val();
-        $("#studentsTableBody").append(`<tr><td>${nom}</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>`);
-    }
-</script>
 </body>
 </html>
+<table class="tableCV">
+    <tbody id="tableau">
+    <tr class="tableheader">
+        <td class="c1"> Nom </td>
+        <td class="c2"> Prénom </td>
+        <td class="c3"> Date de Naissance</td>
+        <td class="c4"> J'aime les cours Web </td>
+        <td class="c5"> Remarques </td>
+        <td class="c6"> CRUD</td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+
+
+<form onsubmit="onFormSubmit();" autocomplete="off">
+    <table>
+        <tr>
+            <th id='mandatory'>Nom</th>
+            <td><input type="text" id="nom" name="Nom"></td>
+        </tr>
+        <tr>
+            <th>Prénom</th>
+            <td><input type="text" id="prenom" name="prenom"></td>
+        </tr>
+        <tr>
+            <th>Date de Naissance</th>
+            <td><input type="text" id="date" name="date" placeholder="dd/mm/YYYY"></td>
+        </tr>
+        <tr>
+            <th>Adore le cours</th>
+
+            <td><input type="checkbox" id="cours" name="adorecours"></td>
+
+        </tr>
+        <tr>
+            <th>Remarques</th>
+
+            <td><input type="text" id="rmq" name="remarques"></td>
+
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="submit" id="Submit" value="Soumettre" /></td>
+        </tr>
+    </table>
+</form>
+
+
+<script>
+    function Utilisateur(n,p,d,c,r){
+        this.nom = n ;
+        this.prenom=p;
+        this.date=d;
+        this.cours=c;
+        this.remarque=r;
+    }
+    function Personne(personne,clé){
+        this.infos= personne;
+        this.clé=clé
+    }
+    let Tab=new Array();
+
+    function onFormSubmit() {
+        let n = document.getElementById('nom').value;
+        if( n != ""){
+            let clé= findkey();
+            let p = document.getElementById('prenom').value;
+            let d= document.getElementById('date').value;
+            let c= document.getElementById('cours').value;
+            let r = document.getElementById('rmq').value;
+            let util= new Utilisateur(n,p,d,c,r);
+            let personne =  new Personne(util,clé);
+            Tab.push(personne);
+            document.getElementById('tableau').innerHTML += "<tr> <td class='c1'> "+ util.nom +
+                "</td> <td class='c2'>"+util.prenom+
+                " </td> <td class='c3'> "+util.date+
+                "</td> <td class='c4'>"+util.cours+
+                " </td> <td class='c6'>"+ util.rmq+
+                "</td> <td class='c6'> <button onclick='deleteligne("+ (personne.clé+1) +
+                ");'> Delete</button> <button onClick='edit("+personne.clé+
+                ");'> Edit </button></td> </tr>" ;
+        } else{
+            document.getElementById('mandatory').innerText = 'NOM OBLIGATOIRE';
+        }
+        // prevent the form to be sent to the server
+        event.preventDefault();
+    }
+    function deleteligne(value){
+
+        document.getElementById("tableau").deleteRow(value);
+        Tab.deleteRow(value);
+    }
+
+    function findkey(){
+        let result = 0;
+        if(Tab.length>0){
+            result = Tab[0].clé;
+            for(let i = 0; i < Tab.length; i++)
+                if(Tab[i].clé>result){
+                    result=Tab[i].clé
+                }
+            result+=1;
+        }
+        return(result);
+    }
+</script> 
