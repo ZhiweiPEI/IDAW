@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc258947-b46f-484e-a69d-bd9edeca2771" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SitePro/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro/cv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SitePro/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro/hobbies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SitePro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SitePro/type.css" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro/type.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SitePro" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pTE8609rOa8BTeqg3xYD5KjrrO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,12 +32,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TP4" />
+      <recent name="$PROJECT_DIR$/TP2" />
+      <recent name="$PROJECT_DIR$/TP2/fr" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TP2/en" />
+      <recent name="$PROJECT_DIR$/TP2" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,10 +64,35 @@
       <workItem from="1615198519680" duration="7014000" />
       <workItem from="1615227122082" duration="2692000" />
       <workItem from="1615235133141" duration="1400000" />
+      <workItem from="1615366211958" duration="7357000" />
+      <workItem from="1615379143905" duration="807000" />
+      <workItem from="1615537930259" duration="8775000" />
+      <workItem from="1615560147162" duration="2564000" />
+      <workItem from="1615563171762" duration="3188000" />
+      <workItem from="1615819473449" duration="8193000" />
+      <workItem from="1615887990758" duration="842000" />
+      <workItem from="1616016003435" duration="1858000" />
+      <workItem from="1616355492884" duration="203000" />
+      <workItem from="1616362214693" duration="51000" />
+      <workItem from="1616363429177" duration="24000" />
+      <workItem from="1616363748004" duration="7000" />
+      <workItem from="1616364334630" duration="44000" />
+      <workItem from="1616574069900" duration="3351000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="532" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616574109528">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="532" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.825@0.23.1440.825" timestamp="1616574109528" />
+    <state x="532" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.828@0.23.1440.828" timestamp="1615377211202" />
+    <state x="384" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1615828068814">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="384" y="173" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1615828068814" />
   </component>
 </project>
