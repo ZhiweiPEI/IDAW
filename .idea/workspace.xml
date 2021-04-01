@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc258947-b46f-484e-a69d-bd9edeca2771" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SitePro" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/project" />
   </component>
   <component name="ProjectId" id="1pTE8609rOa8BTeqg3xYD5KjrrO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP3/Q3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,11 +42,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TP3/Q3" />
       <recent name="$PROJECT_DIR$/TP4" />
       <recent name="$PROJECT_DIR$/TP2" />
       <recent name="$PROJECT_DIR$/TP2/fr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TP3/inscrire" />
+      <recent name="$PROJECT_DIR$/TP3/Q3" />
+      <recent name="$PROJECT_DIR$/TP3/Q2" />
       <recent name="$PROJECT_DIR$/TP2/en" />
       <recent name="$PROJECT_DIR$/TP2" />
     </key>
@@ -77,7 +81,8 @@
       <workItem from="1616363429177" duration="24000" />
       <workItem from="1616363748004" duration="7000" />
       <workItem from="1616364334630" duration="44000" />
-      <workItem from="1616574069900" duration="3427000" />
+      <workItem from="1616574069900" duration="8717000" />
+      <workItem from="1617143633587" duration="1007000" />
     </task>
     <servers />
   </component>
@@ -85,11 +90,23 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="326" y="84" key="#Deployment" timestamp="1617143675689">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="326" y="84" key="#Deployment/0.23.1440.824@0.23.1440.824" timestamp="1617143675689" />
     <state x="532" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616574109528">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="532" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.825@0.23.1440.825" timestamp="1616574109528" />
     <state x="532" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.828@0.23.1440.828" timestamp="1615377211202" />
+    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1617143723788">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.824@0.23.1440.824" timestamp="1617143723788" />
+    <state x="326" y="157" key="Vcs.Push.Dialog.v2" timestamp="1617144815730">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="326" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.824@0.23.1440.824" timestamp="1617144815730" />
     <state x="384" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1615828068814">
       <screen x="0" y="23" width="1440" height="826" />
     </state>

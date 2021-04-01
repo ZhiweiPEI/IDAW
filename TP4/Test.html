@@ -81,7 +81,7 @@
         let nom = $("#inputNom").val();
         let prenom=$("#inputPrenom").val();
         let birthday=$("#inputBirthday").val();
-        let like=$("#inputLike").val();
+        let like=$("#inputLike").prop("checked")?"oui":"non";
         let remark=$("#inputRemark").val();
         if(nom!="") {
             $("#studentsTableBody").append(`
